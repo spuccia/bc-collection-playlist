@@ -106,6 +106,20 @@ Array of track objects with full metadata:
 4. Extracts track metadata and stream URLs from the tracklist data
 5. Outputs in the requested format
 
+## Disclaimer
+
+This tool is provided for personal and educational purposes only.
+
+- It only accesses publicly available data from Bandcamp user profiles
+- Stream URLs are the same 128kbps previews that Bandcamp serves in its web player
+- No DRM or access controls are bypassed
+- No copyrighted content is downloaded or redistributed by this tool
+- This project is not affiliated with or endorsed by Bandcamp
+
+Users are responsible for ensuring their use complies with Bandcamp's
+[Terms of Use](https://bandcamp.com/terms_of_use) and applicable copyright laws.
+Stream URLs are temporary and intended for personal listening only.
+
 ## License
 
 MIT
