@@ -31,6 +31,9 @@ python bandcamp_playlist.py <username> -f m3u --all-pages
 # Include wishlist tracks
 python bandcamp_playlist.py <username> -f m3u --all-pages --wishlist
 
+# Expand each album to its full tracklist (initial batch only)
+python bandcamp_playlist.py <username> -f m3u --full-albums
+
 # Export as JSON
 python bandcamp_playlist.py <username> -f json --all-pages -o collection.json
 
@@ -45,6 +48,7 @@ python bandcamp_playlist.py <username> -f m3u -o my-playlist.m3u
 | `username` | | Bandcamp username (required) |
 | `--format` | `-f` | Output format: `txt`, `m3u`, or `json` (default: `txt`) |
 | `--all-pages` | `-a` | Fetch all collection pages, not just the initial batch of 20 |
+| `--full-albums` | `-F` | Expand each album to its full tracklist instead of the single track Bandcamp shows in the collection/wishlist. Only applies to the initial batch — extra pages fetched via `--all-pages` still return one track per album |
 | `--wishlist` | `-w` | Include wishlist tracks in the output |
 | `--output` | `-o` | Output file path. For M3U format, defaults to `playlist-<username>.m3u` |
 
